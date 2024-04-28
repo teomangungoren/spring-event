@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: spring-event
+  datasource:
+    username: secret
+    password: secret
+    url: jdbc:postgresql://localhost:5432/spring-event
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+server:
+  port: 8080

@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+  transactional-event-db:
+    image: postgres
+    restart: always
+    container_name: "transactional-event"
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: secret
+      POSTGRES_USER: secret
+      POSTGRES_DB: spring-event
